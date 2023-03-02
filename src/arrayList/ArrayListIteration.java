@@ -18,12 +18,18 @@ public class ArrayListIteration {
         }
     }
 
+    static <T> void printElementsWithEnhancedForLoop(ArrayList<T> arrayList) {
+        for (T element: arrayList) {
+            System.out.println(element);
+        }
+    }
+
     public static void main(String[] args) {
         ArrayList<String> fruits = new ArrayList<>( Arrays.asList("apple", "banana", "pineapple", "orange") );
         ArrayList<Integer> numbers = new ArrayList<>( Arrays.asList(1, 2, 3, 4, 5) );
         System.out.println("Fruits");
-        printElementsWithIterator(fruits);
+        printElementsWithEnhancedForLoop(fruits);
         System.out.println("\nNumbers");
-        printElementsWithIterator(numbers);
+        printElementsWithEnhancedForLoop(numbers);
     }
 }
