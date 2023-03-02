@@ -19,6 +19,7 @@ public class ArrayListIteration {
     }
 
     static <T> void printElementsWithEnhancedForLoop(ArrayList<T> arrayList) {
+        if (arrayList == null) return;
         for (T element: arrayList) {
             System.out.println(element);
         }
